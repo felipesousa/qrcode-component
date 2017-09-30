@@ -1,0 +1,6 @@
+bower_components/
+
+.DS_Store
+.swp
+.vscode
+.idea

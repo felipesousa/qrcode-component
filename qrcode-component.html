@@ -1,0 +1,51 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<script src="../qrious/dist/qrious.js"></script>
+
+<dom-module id="qrcode-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+        --width-area: 150px;
+      }
+
+      :host #qrarea {
+        width: var(--qrcode-component-width, var(--width-area));
+      }
+
+    </style>
+    <canvas id="qrarea"></canvas>
+  </template>
+
+  <script>
+    class QRCode extends Polymer.Element {
+      constructor() {
+        super();
+      }
+
+      static get is() { return 'qrcode-component'; }
+
+      static get properties() {
+        return {
+          url: {
+            type: String,
+            value: 'yoursite.com',
+          }
+        };
+      }
+
+      ready() {
+        super.ready();
+        const element = this.$.qrarea;
+
+        const qr = new QRious({
+          element,
+          value: this.url 
+        });
+      }
+    }
+
+    window.customElements.define(QRCode.is, QRCode);
+  </script>
+</dom-module>
+
