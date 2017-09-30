@@ -1,31 +1,32 @@
 {
-  "name": "qrcode-component",
-  "authors": [
-    "Felipe Sousa <felipzbr@gmail.com>"
-  ],
-  "description": ":space_invader: QR Code component made easy with web components!",
-  "main": "qrcode-component.html",
-  "license": "https://github.com/felipesousa/qrcode-component/blob/master/LICENSE.md",
-  "homepage": "https://github.com/felipesousa/qrcode-component",
-  "repository": {
-    type": "git",
-     "url": "git://github.com/felipesousa/qrcode-component"
-  },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "keywords": {
-    "polymer",
-    "qrcode",
-    "qrcode-generator",
-    "web-components"
-  },
-  "dependencies": {
-    "polymer": "2",
-    "qrious": "^4.0.2"
-  }
+	"name": "qrcode-component",
+	"version": "1.0.0",
+	"authors": [
+		"Felipe Sousa <felipzbr@gmail.com>"
+	],
+	"description": ":space_invader: QR Code component made easy with web components!",
+	"main": "qrcode-component.html",
+	"license": "https://github.com/felipesousa/qrcode-component/blob/master/LICENSE.md",
+	"homepage": "https://github.com/felipesousa/qrcode-component",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/felipesousa/qrcode-component"
+	},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"keywords": [
+		"polymer",
+		"qrcode",
+		"qrcode-generator",
+		"web-components"
+	],
+	"dependencies": {
+		"polymer": "2",
+		"qrious": "^4.0.2"
+	}
 }
